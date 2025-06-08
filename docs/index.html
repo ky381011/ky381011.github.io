@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>PORTFOLIOS</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-  </head>
-  <body>
-    <h2>Portfolios</h2>
-    <p>New</p>
-  </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Swiper Demo</title>
+
+  <!-- Swiper CSS（swiperフォルダ内） -->
+  <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+
+  <style>
+    .swiper {
+      width: 600px;
+      height: 300px;
+    }
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Swiper本体 -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">スライド1</div>
+      <div class="swiper-slide">スライド2</div>
+      <div class="swiper-slide">スライド3</div>
+    </div>
+
+    <!-- オプション -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- Swiper JS（swiperフォルダ内） -->
+  <script src="swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
 </html>
