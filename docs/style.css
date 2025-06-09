@@ -1,14 +1,30 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
 h2 {
     text-align: center;
     color: aqua;
     font-size: large;
     font-style: italic;
+    /*
     background-color: #330033;
     background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    */
+    margin: 0%;
+    padding: auto;
 }
 
 p {
     text-align: center;
     color: blue;
     font-size: medium;
+}
+
+#center {
+    text-align: center;
+    background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    margin: 0%;
+    padding: 0%;
 }
