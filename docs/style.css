@@ -51,9 +51,9 @@ p {
     );
     gap: 20px;
     padding: 20px;
-    min-width: none;
-    max-width: 1200px;
-    min-height: 600px;
+    min-width: 800px;
+    max-width: 1600px;
+    min-height: 800px;
     margin: auto;
 }
 
