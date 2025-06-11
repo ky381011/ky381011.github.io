@@ -40,3 +40,28 @@ p {
     padding: 0%;
 }
 
+/*
+  For widget
+*/
+.widget-container{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+    gap: 20px;
+    padding: 20px;
+    min-width: none;
+    max-width: 1200px;
+    min-height: 600px;
+    margin: auto;
+}
+
+.widget {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    text-align: center;
+    border-radius: 10px;
+}
