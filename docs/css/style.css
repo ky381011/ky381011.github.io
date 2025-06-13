@@ -1,0 +1,63 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+html {
+    min-height: 100%;
+    background-image: linear-gradient(
+        180deg,
+        rgba(36, 55, 111, 1) 25%,
+        rgba(101, 90, 167, 1) 50%,
+        rgba(133, 76, 185, 1) 66%,
+        rgba(56, 144, 170, 1) 84%,
+        rgba(219, 154, 105, 1)
+    );
+}
+*/
+
+p {
+    text-align: center;
+    color: blue;
+    font-size: medium;
+}
+
+#center {
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*
+  For widget
+*/
+.widget-container{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+    gap: 20px;
+    padding: 20px;
+    min-width: 800px;
+    max-width: 1600px;
+    min-height: 800px;
+    margin: auto;
+}
+
+.widget {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    text-align: center;
+    border-radius: 10px;
+}
